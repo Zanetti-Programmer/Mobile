@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calculadora de IMC"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tabela de IMC:"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Abaixo do peso: menor que 18.5\nPeso ideal: 18.5 a 25.0\nAcima do peso: 25.0 a 30.0\nObesidade Grau I: 30.0 a 35.0\nObesidade Grau II: 35.0 a 40.0\nObesidade Grau III: maior que 40.0"
+        android:textSize="14sp" />
+
+    <EditText
+        android:id="@+id/weight_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Digite seu peso (kg)"
+        android:inputType="numberDecimal|numberSigned" /> <!-- Permitindo números decimais e números positivos/negativos -->
+
+    <EditText
+        android:id="@+id/height_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Digite sua altura (cm)"
+        android:inputType="numberDecimal|numberSigned" /> <!-- Permitindo números decimais e números positivos/negativos -->
+
+
+    <Button
+        android:id="@+id/calculate_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calcular" />
+
+</LinearLayout>
